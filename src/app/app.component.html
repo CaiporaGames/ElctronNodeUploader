@@ -1,0 +1,26 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <h1>NODE SERVER</h1>
+    <div class="form-group">
+      <label for="file">Choose File</label>
+      <input type="file"
+             id="file"
+             [multiple]="true"
+             (change)="upload($event)">
+    </div>
+    <button (click)="sendFile()">Send</button>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="container-fluid">
+    <h1>ELECTRON</h1>
+    <div class="form-group">
+      <label for="file">Choose File</label>
+      <input type="file"
+             id="file"
+             [multiple]="true"
+             (change)="uploadFiles($event)">
+    </div>
+  </div>
+</div>
